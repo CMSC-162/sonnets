@@ -85,7 +85,7 @@ def gethashes (f):
   hashes = []
   for line in fh:
     x = line.split()
-    sonnets.append(x[2])
+    sonnets.append(x[-1])
     hashes.append(int(x[0]))
   fh.close()
   return sonnets[0], hashes[0], sonnets[1:], [hashes[0] ^ h for h in hashes[1:]]
