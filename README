@@ -3,3 +3,9 @@ To generate hfile, run
   cksum sonnets/* > hfile
 
 The "base sonnet" must be the first line on the command line, which works here because sonnets/base is the base sonnet and the other sonnets are called sonnets/sXX where XX are digits.
+
+To run the testsuite, run
+
+  ./test.sh
+
+If the tests are successful, testsuite will print out 30 lines of the same repeated test hash, followed by "OK; 30 tests passed."
